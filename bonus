@@ -1,0 +1,29 @@
+
+public class daa {
+public static int buioldReapiting ( IntNode a, int num,int counter ) {
+	if ( a.getValue == num  ) {
+		counter++;
+		
+	}
+	if ( a.getNext == null) {
+		return counter;
+	}
+	return buioldReapiting ( a.getNext , num ,counter);
+}
+public static int count (IntNode a, int x) {
+	if(a == null) {
+		return 0;
+	}
+	if (a.getVakue == x) {
+		return (1+count(a.getNext ,x));
+	}
+	if ( a.getVakue != x) {
+		return (count(a.getNext ,x));
+	}
+}
+	public static void main(String[] args) {
+		
+
+	}
+
+}
